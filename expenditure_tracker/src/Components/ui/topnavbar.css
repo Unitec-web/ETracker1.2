@@ -1,0 +1,164 @@
+/* General styling for the navigation bar */
+.navbar {
+ 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #426a83; /* Light blue background */
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  z-index: 999; /* Ensure it appears on top of other elements */
+}
+
+/* Upper section of the navbar */
+.navbar-upper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30rem;
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.app-title h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white; /* White title color */
+}
+
+/* Lower section (navigation items) */
+.navbar-lower ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.navbar-lower li {
+  display: inline-block;
+  margin: 0 10px; /* Reduced margin for smaller screens */
+  padding: 1rem 0;
+  transition: transform 0.2s ease-in-out; /* Animation for hover */
+}
+
+/* Anchor tag styling */
+.navbar-lower a {
+  text-decoration: none;
+  color: #F0F0F0; /* Off-white color for unselected items */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Active (selected) link styling */
+.navbar-lower li.active a {
+
+ color: orange;
+}
+
+/* Hover effect for list items */
+.navbar-lower li:hover {
+  transform: scale(1.1); /* Enlarge on hover */
+}
+
+/* Language selector styling */
+.language-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.language-selector {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  background-color: white; /* White background */
+  color: #134B70; /* Blue text */
+  margin-right: 5px;
+}
+
+/* Search bar styling */
+.search-container {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-bar {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FFF; /* White background */
+  color: #134B70; /* Blue text */
+  font-size: 14px;
+  width: 200px; /* Width of the search bar */
+}
+
+.search-button {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 5px; /* Position the button inside the search bar */
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.search-icon {
+  width: 18px; /* Adjust as needed */
+  height: 18px; /* Adjust as needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .navbar-upper {
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+  }
+  
+  .navbar-lower {
+    width: 100%; /* Full width for lower navbar */
+    display: flex;
+    justify-content: center; /* Center items */
+  }
+
+  .navbar-lower ul {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+  }
+
+  .navbar-lower li {
+    margin: 10px 0; /* Space out items vertically */
+  }
+
+  .language-search {
+    margin-top: 10px;
+    width: 100%; /* Full width for language and search */
+    display: flex;
+    justify-content: center; /* Center language selector and search */
+  }
+
+  .language-container, .search-container {
+    margin: 0 5px; /* Margin around containers */
+    width: auto; /* Allow width to adjust */
+  }
+
+  .search-bar {
+    width: 150px; /* Adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .app-title h1 {
+    font-size: 20px; /* Smaller font for mobile */
+  }
+
+  .navbar-lower li a {
+    font-size: 14px; /* Smaller font size for menu items */
+  }
+
+  .search-bar {
+    width: 120px; /* Further adjust search bar for mobile */
+  }
+}

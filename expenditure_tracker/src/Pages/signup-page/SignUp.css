@@ -1,0 +1,196 @@
+.sign-upContainer{
+  width: 100%;
+  height: 100vh;
+  background-color:rgb(255, 255, 255) ;
+
+
+}
+.sign-upFlexContainer{
+  width:90%;
+  height:90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto;
+  padding: 10px;
+}
+.sign-rightContainer,
+.sign-leftContainer{
+  flex: 1;
+  height:100%;
+  background-color: white;
+}
+.sign-leftContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.sign-leftContainer >.login-btn{
+  background-color: #134B70;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 60px;
+  padding-right: 60px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius:28px ;
+
+
+}
+p{
+  color: #212121;
+  font-size: x-small;
+  margin-bottom: 20px;
+}
+.sign-rightContainer{
+  display: flex;
+  flex-direction: column;
+  margin: 5px auto;
+  justify-content: center;
+  align-items: center;
+
+}
+.form form{
+  padding: 40px;
+  color: black;
+  background-color: white;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+
+
+}
+.form{
+     
+    box-shadow: -16px 14px 74.9px rgba(0, 0, 0, 0.25);
+}
+ p{
+  color: #FF0000;
+  font-size: x-small;
+}
+.label,
+::placeholder{
+  font-size:small;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.input{
+  padding: 10px;
+  border-radius: 20px;
+}
+.signup-btn{
+  background-color: #FF7A00;
+  color: white;
+  font-size:small;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  
+}
+.sign-with-thirdPart{
+  display: flex;
+  gap: 5px;
+  margin-top: 20px;
+}
+.btn-google,
+.btn-facebook{
+  display: flex;
+  justify-content: center;
+            align-items: center;
+            padding: 10px 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s;
+}
+.btn-facebook img,
+.btn-google img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.btn-facebook:hover,
+.btn-google:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+.sign-with-thirdPart .login-btn{
+  display: none;
+}
+@media (max-width: 700px) {
+  .sign-with-thirdPart {
+      width: 80%;
+      align-items: center;
+      font-size: smaller;
+      gap: 2px;
+      
+  }
+
+  .sign-leftContainer{
+    display: none;
+  }
+  .sign-rightContainer{
+  align-items: top;
+  height: auto;
+  margin:5px;
+  }
+  .sign-upFlexContainer{
+    height: auto;
+    padding-bottom:10px;
+  }
+  .sign-upContainer{
+   
+    height: auto;
+ 
+  }
+  .form{
+     
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+.sign-with-thirdPart .login-btn{
+  
+  background-color: #134B70;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1px auto;
+  /* width: fit-content; */
+width: 18rem;
+}
+.btn-facebook img,
+.btn-google img {
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+  
+}
+.btn-facebook,
+.btn-google{
+  font-size: smaller;
+}
+  
+
+.label,
+::placeholder{
+  margin: 1rem;
+}
+.input{
+
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+}

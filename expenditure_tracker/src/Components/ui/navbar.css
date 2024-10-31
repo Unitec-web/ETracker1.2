@@ -1,0 +1,44 @@
+.bnavbar{
+  height: 4.5rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #ECECEC;
+  border-radius: 10px 10px 0 0; /* Rounded top corners */
+  padding: 25px; /* Increased height */
+  display: flex;
+  justify-content: center; /* Center the list items */
+  align-items: center; /* Align items vertically */
+  z-index: 999; /* Ensure it's always on top */
+}
+
+.bnavbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-grow: 1; /* Make list items fill available space */
+  justify-content: space-around; /* Evenly space list items */
+}
+
+.bnavbar li {
+  margin: 0; /* Removed margin */
+}
+
+.bnavbar a {
+  text-decoration: none;
+  color: #333;
+}
+
+.bnavbar img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease-in-out; /* Add transition effect */
+}
+
+.bnavbar img:hover {
+  transform: scale(1.2); /* Increase size on hover */
+}

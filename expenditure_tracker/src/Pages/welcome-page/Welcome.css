@@ -1,0 +1,189 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+
+  
+  
+}
+.welcome-paragraph{
+  color: rgb(27, 26, 26);
+  margin-top: 20px;
+  font-size: medium;
+  width: 300px;
+}
+.flex-container2,
+.flex-container{
+  width:90%;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto;
+  padding: 10px;
+  
+}
+.flex-container2{
+  margin-bottom: 10px;
+}
+
+.right-column{
+
+   flex: 1;
+  height: inherit;
+
+
+}
+.right-column img{
+  width: 100%;
+  height:inherit ;
+}
+.left-column{
+  background-color:white;
+ 
+   flex:1;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+
+}
+
+.ellipse{
+  background-color: rgb(255, 255, 255);
+   flex:1;
+  height: 50px;
+  padding: 2px;
+  display: flex;
+   justify-content: start;
+  align-items: center;
+  margin: 0 0 0 105px;
+}
+.right-arrow{
+  background-color: rgb(255, 255, 255);
+   flex:1;
+  height: 50px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding:2px 40px 2px 0;
+  margin-right: 50px;
+}
+.btn-login,
+.btn-create-Acount{
+  margin-right: 10px;
+  border: none;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+ 
+
+}
+.btn-create-Acount button,
+.btn-login button{
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  border: none;
+  width: 200px;;
+}
+.btn-login button{
+  background-color: #FF7A00;
+}
+.btn-create-Acount button{
+
+  background-color:#134B70;
+}
+.btn-login
+.ellipses-img {
+  display: flex;
+  gap: 5px;
+}
+
+.ellipses-img {
+  display: flex;
+  gap: 5px;
+
+}
+.leftarrow{
+  display: none;
+}
+.ellipses-img1{
+  display: none;
+}
+.right-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+
+@media (max-width: 768px){
+  .flex-container2,
+.flex-container{
+  display: inline-block;
+
+}
+.right-column,
+.left-column{
+  height: 250px;
+  overflow: hidden;
+}
+.right-arrow{
+  height: 25px;
+  padding:1px 20px 1px 0;
+  margin:5px auto;
+  justify-content: space-between;
+}
+.ellipses-img1{
+ 
+  display: flex;
+  gap: 5px;
+
+}
+.ellipse{
+  display: none;
+}
+.left-column{
+  background-color:white;
+ 
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  
+  
+
+}
+
+.btn-login,
+.btn-create-Acount{
+  margin-top: 5px;
+  
+
+}
+
+.btn-create-Acount button,
+.btn-login button{
+  padding: 10px;
+  width: 140px;
+
+}
+.leftarrow{
+  display: flex;
+
+}
+.right-btn{
+
+  margin-right: 0px;
+}
+
+
+
+
+}

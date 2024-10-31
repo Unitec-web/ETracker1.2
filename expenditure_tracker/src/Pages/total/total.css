@@ -1,0 +1,129 @@
+.Total-container {
+    width: 95%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding-top: 20;
+   margin-top: 120px;
+   margin-bottom: 10px;
+    background-color:rgb(241, 241, 241);
+  }
+  
+  .analiysis {
+    width: 90%;
+    display: flex;
+    height:auto;
+    justify-content: center;
+    align-items:start;
+    margin: 20px auto;
+  }
+  
+  .recommendation{
+    width:90%;
+    display: flex;
+    height:20%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+  }
+  .double-right-arrow{
+    background-color: rgb(9, 244, 68);
+    width: 20px;
+    margin-top: 10px;
+  
+  }
+  
+  
+  .total-expenditure {
+    position: relative;
+    margin: 10px;
+    text-align: center;
+  }
+  .recommendation,
+  .amount-left,
+  .initial-budget{
+    position: relative;
+    margin: 5px;
+  }
+  .acounting-flex{
+    width: 80%;
+  }
+  .amount-left img,
+  .initial-budget img,
+  .total-expenditure img{
+    width: 100%; 
+    height: 100%;
+  }
+  .recommendation p,
+  .initial-budget h2,
+  .amount-left h2,
+  .total-expenditure p {
+    width: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Ensure text is visible */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add background for better readability */
+    padding: 5px;
+    border-radius: 5px;
+    font-size: larger;
+    cursor: pointer;
+  }
+  .recommended{
+    width: 100%;
+    height: 100%;
+  }
+  .total-expenditure{
+    width:80% ;
+    height: 90%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* responsive design*/
+  
+  @media (max-width:600px){
+    .analiysis {
+     flex-direction: column;
+      height:auto;
+      margin:0 auto;
+     
+    }
+  
+    .total-expenditure{
+      height: 200px;
+      font-size: small;
+      width: 100%;
+    }
+    .initial-budget h2,
+    .amount-left h2{
+      font-size: medium;
+    }
+    .Total-container{
+      margin-bottom: 10px;
+      display: flex;
+    }
+    .recommendation{
+      height: 100px;
+      
+    }
+    .acounting-flex{
+      width: 100%;
+    }
+    
+  }
+  @media (width:768px){
+    .recommendation,
+    .recommended{
+      height: auto;
+    }
+  }
+  
+  

@@ -1,0 +1,137 @@
+.container{
+    margin-top: 4%;
+}
+.logindiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    /* height: 100vh; */
+}
+.Login {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.header {
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.terms {
+    font-size: x-small;
+}
+
+.register {
+    margin-bottom: 15px;
+}
+
+.logininput {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 400px;
+    border-color:transparent;
+    height: 50px;
+    background-color: #eaeaea;
+    padding-left: 30px;
+    border: none;
+    font-size: 19px;
+    border-radius: 25px;
+}
+
+.underline {
+    height: 2px;
+    background: #212121;
+    border-radius: 9px;
+}
+
+.rememberme {
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.submit {
+   
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #134B70;
+    border: 1px solid #134B70;
+    border-radius: 30px;
+    height: 40px;
+    /* width: auto; */
+    margin: 0 30px 0 30px;
+
+    width: 93%;
+    /* background: transparent; */
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.login_button {
+    background: #FF7A00;
+}
+
+.forgotten_password {
+    color: #53ACFF;
+    text-decoration: none;
+}
+
+.autologin {
+    height: 40px;
+}
+
+.row .col button {
+    
+    border: none;   
+}
+
+@media (min-width: 500px) and (max-width:800px){
+    div.logindiv.row {
+        margin: 0px;
+        margin-top: 5%;
+        margin-right: 18%;
+        padding: 0px;
+    }
+
+    .logininput {
+        width: 40vh;
+    }
+    .img-fluid{
+        display: none;
+    }
+  
+}
+@media (max-width: 490px){
+    .img-fluid{
+        display: none;
+    }
+    .logininput {
+        width: 40vh;
+    }
+    .text-center{
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    div.logindiv.row {
+        margin: 0px;
+        margin-top: 4%;
+        margin-right: 5%;
+        padding: 0px;
+    }
+   
+}

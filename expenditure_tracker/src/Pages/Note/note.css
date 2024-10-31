@@ -1,0 +1,77 @@
+.createNote{
+    position: relative;
+    bottom: 15%;
+    left: 95%;
+   font-size: 80px;
+   border: none;
+}
+.create-note-form button {
+border: none;
+display: block;
+font-size: 50px;
+margin-left: 95%;
+margin-bottom: 3%;
+}
+.create-note-title{
+    width: 80vw;
+}
+.create-note-content{
+    height: 70vh;
+    width: 80vw;
+    padding-top: 0px;
+  
+}
+
+
+
+.updateNote{
+    color:blue;
+    border-radius: 10px;
+    margin: 1%;
+    width: 40vw;
+    height: 20vh;
+    padding: 10px;
+    margin-left: 10%;
+}
+.note-btn{
+    border-radius: 10px;
+    width: 5rem;
+    height: 2.5rem;
+    margin-right: 5px;
+    position: relative;
+    left: 87.5%;
+    bottom: 1px;
+}
+.update-note-btn{
+    border-radius: 10px;
+    width: 5rem;
+    height: 2.5rem;
+    margin: 1%;
+    position: relative;
+    left: -7%;
+    top:30px; 
+}
+.note-item{
+    background-color: #F5F5F5;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin: 1%;
+    width: 80vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: none 0.3s ease;
+
+}
+@media (min-width: 500px) and (max-width:800px){
+    .createNote{
+        font-size: 60px;
+        left: 90%;
+        z-index: 1000;
+    }
+    .create-note-form button{
+        margin-left: 92%;
+        margin-bottom: 10%;
+        font-size: 30px;
+        z-index: 1000;
+    }
+}

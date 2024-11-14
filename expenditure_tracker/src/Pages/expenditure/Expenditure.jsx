@@ -8,6 +8,7 @@ import CreateNote from '../Note/CreateNote';
 import "./home.css"
 import DisplayNote from '../Note/DisplayNote';
 import Note from '../Note/Note';
+import List from './List'
 
 function Expenditure() {
   const [isLoggingOut,setIsLoggingOut]=useState(false)
@@ -24,8 +25,9 @@ if(!isLoggingOut){
       <TopNavbar />
       {/* this is just to test code. feel free to comment the code below and work */}
     {!isloggedIn && (<Navigate to={"/"} replace={true} />)}
-    
-    <div>Add expenditure code below this div</div>
+    <div>
+    <List />
+    </div>
      <NavBar />
     </div>
   )

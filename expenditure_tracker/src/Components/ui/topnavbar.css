@@ -1,50 +1,44 @@
 /* General styling for the navigation bar */
 .navbar {
- 
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background-color: #426a83; /* Light blue background */
-  padding: 0 10px;
-  display: flex;
-  flex-direction: column;
+  padding: 10px 20px;
   z-index: 999; /* Ensure it appears on top of other elements */
 }
 
-/* Upper section of the navbar */
-.navbar-upper {
+/* Content of the navbar */
+.navbar-content {
   display: flex;
   justify-content: space-between;
-  gap: 30rem;
   align-items: center;
   flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  width: 100%;
 }
 
+/* App title styling */
 .app-title h1 {
   font-size: 24px;
   font-weight: bold;
   color: white; /* White title color */
 }
 
-/* Lower section (navigation items) */
-.navbar-lower ul {
+/* Navigation links styling */
+.navbar-links ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap */
+  gap: 20px; /* Space between links */
 }
 
-.navbar-lower li {
-  display: inline-block;
-  margin: 0 10px; /* Reduced margin for smaller screens */
-  padding: 1rem 0;
+.navbar-links li {
   transition: transform 0.2s ease-in-out; /* Animation for hover */
 }
 
-/* Anchor tag styling */
-.navbar-lower a {
+.navbar-links a {
   text-decoration: none;
   color: #F0F0F0; /* Off-white color for unselected items */
   font-size: 16px;
@@ -52,96 +46,82 @@
 }
 
 /* Active (selected) link styling */
-.navbar-lower li.active a {
-
- color: orange;
+.navbar-links li.active a {
+  color: orange;
 }
 
 /* Hover effect for list items */
-.navbar-lower li:hover {
+.navbar-links li:hover {
   transform: scale(1.1); /* Enlarge on hover */
 }
 
-/* Language selector styling */
-.language-container {
-  display: inline-flex;
+/* Language selector and search bar styling */
+.language-search {
+  display: flex;
   align-items: center;
+  gap: 10px; /* Space between language selector and search */
 }
 
-.language-selector {
-  padding: 8px 12px;
-  border-radius: 5px;
-  border: none;
-  font-size: 14px;
-  background-color: white; /* White background */
-  color: #134B70; /* Blue text */
-  margin-right: 5px;
-}
-
-/* Search bar styling */
-.search-container {
-  display: inline-flex;
-  align-items: center;
-  position: relative;
-}
-
+.language-selector,
 .search-bar {
   padding: 8px 12px;
   border-radius: 5px;
   border: none;
-  background-color: #FFF; /* White background */
-  color: #134B70; /* Blue text */
   font-size: 14px;
-  width: 200px; /* Width of the search bar */
 }
 
+.language-selector {
+  background-color: white; /* White background */
+  color: #134B70; /* Blue text */
+}
+
+/* Adjust the search container styling */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Search bar styling */
+.search-bar {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  width: 150px; /* Adjust width for better compactness */
+}
+
+/* Search button styling */
 .search-button {
   background: none;
   border: none;
-  position: absolute;
-  right: 5px; /* Position the button inside the search bar */
-  top: 50%;
-  transform: translateY(-50%);
   cursor: pointer;
+  padding: 5px; /* Smaller padding to reduce size */
+  margin-left: 5px; /* Space between search bar and button */
 }
 
 .search-icon {
-  width: 18px; /* Adjust as needed */
-  height: 18px; /* Adjust as needed */
+  width: 16px; /* Smaller icon size */
+  height: 16px; /* Smaller icon size */
 }
 
 /* Responsive adjustments */
-@media (max-width: 500px) {
-  .navbar-upper {
-    flex-direction: column;
+@media (max-width: 768px) {
+  .navbar-content {
     align-items: flex-start; /* Align items to the left */
   }
-  
-  .navbar-lower {
-    width: 100%; /* Full width for lower navbar */
-    display: flex;
+
+  .navbar-links {
+    width: 100%; /* Full width for links */
     justify-content: center; /* Center items */
   }
 
-  .navbar-lower ul {
-    flex-direction: column; /* Stack items vertically */
+  .navbar-links ul {
+    flex-direction: row; /* Stack items vertically */
     align-items: center; /* Center items */
   }
 
-  .navbar-lower li {
+  .navbar-links li {
     margin: 10px 0; /* Space out items vertically */
-  }
-
-  .language-search {
-    margin-top: 10px;
-    width: 100%; /* Full width for language and search */
-    display: flex;
-    justify-content: center; /* Center language selector and search */
-  }
-
-  .language-container, .search-container {
-    margin: 0 5px; /* Margin around containers */
-    width: auto; /* Allow width to adjust */
   }
 
   .search-bar {
@@ -154,7 +134,7 @@
     font-size: 20px; /* Smaller font for mobile */
   }
 
-  .navbar-lower li a {
+  .navbar-links a {
     font-size: 14px; /* Smaller font size for menu items */
   }
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './topnavbar.css'; // Import the CSS file for styling
-import Searc from './Assets/search.png'; //
+import SearchIcon from './Assets/search.png'; // Corrected import name for clarity
 import { Link } from 'react-router-dom';
 
 const TopNavbar = () => {
@@ -12,18 +12,17 @@ const TopNavbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar-upper">
+      <div className="navbar-content">
         <div className="app-title">
-          {/* Your app title */}
           <h1>Unity Money Manager</h1>
         </div>
-        <div className="navbar-lower">
+        <div className="navbar-links">
           <ul>
             <li 
               className={selected === 0 ? 'active' : ''}
               onClick={() => handleSelect(0)}
             >
-             <Link to="/homepage">Expenditure</Link>
+              <Link to="/homepage">Expenditure</Link>
             </li>
             <li 
               className={selected === 1 ? 'active' : ''}
@@ -40,20 +39,15 @@ const TopNavbar = () => {
           </ul>
         </div>
         <div className="language-search">
-          {/* Language selector with an icon */}
-          <div className="language-container">
-            <select className="language-selector">
-              <option value="English">English</option>
-              <option value="Spanish">Spanish</option>
-              <option value="French">French</option>
-            </select>
-          </div>
-          
-          {/* Search bar with an icon */}
+          <select className="language-selector">
+            <option value="English">English</option>
+            <option value="Spanish">Spanish</option>
+            <option value="French">French</option>
+          </select>
           <div className="search-container">
             <input type="text" className="search-bar" placeholder="Search" />
             <button className="search-button">
-              <img src={Searc} alt="Search Icon" className="search-icon" />
+              <img src={SearchIcon} alt="Search Icon" className="search-icon" />
             </button>
           </div>
         </div>

@@ -1,0 +1,31 @@
+.list-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .name {
+    font-weight: bold;
+  }
+  
+  .type {
+    color: #666;
+  }
+  
+  .price {
+    font-weight: bold;
+  }
+
+  .type-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
